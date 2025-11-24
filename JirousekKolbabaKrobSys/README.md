@@ -1,0 +1,1 @@
+# Skupinove-Projekty_IT3_2025
