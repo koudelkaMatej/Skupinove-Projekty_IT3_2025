@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cm403ohxmkkkt"]
+
+[ext_resource type="Texture2D" uid="uid://qowect4dk3vu" path="res://assets/sprites/platforms.png" id="1_mp1lo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ra4rc"]
+size = Vector2(32, 8)
+
+[node name="icePlatform" type="AnimatableBody2D" unique_id=58756579]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=97507258]
+texture = ExtResource("1_mp1lo")
+region_enabled = true
+region_rect = Rect2(15.9815855, 47.984848, 32.000946, 9.100719)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1511402474]
+shape = SubResource("RectangleShape2D_ra4rc")
+one_way_collision = true
