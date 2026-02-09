@@ -1,0 +1,7 @@
+obecně:
+    blud vyjde z domečku v horách a jde za zmrzlinou skrz různé biomy
+    cestou bude potkávat cukrátka které ho budou chtít zabít ofc
+    ...
+1.level cesta začíná 
+      to se ještě domyslí 
+    
