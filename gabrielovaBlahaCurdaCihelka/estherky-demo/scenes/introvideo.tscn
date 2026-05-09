@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dwi4vapot44kg"]
+
+[ext_resource type="Script" uid="uid://bsxhbui4umdg8" path="res://scenes/introvideo.gd" id="1_bfy2l"]
+[ext_resource type="VideoStream" uid="uid://5coqui6lh3ew" path="res://assets/gelato-odyssey-intro-2.ogv" id="2_bfy2l"]
+
+[node name="Control" type="Control" unique_id=1025387936]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bfy2l")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=498434822]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_bfy2l")
+autoplay = true
+expand = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
